@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mon Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 text-gray-900">
+
+  <!-- Navbar -->
+  <header class="bg-white shadow-md fixed w-full top-0 left-0 z-10">
+    <nav class="container mx-auto flex justify-between items-center p-4">
+      <h1 class="text-2xl font-bold">MonPortfolio</h1>
+      <ul class="hidden md:flex space-x-6">
+        <li><a href="#home" class="hover:text-blue-500">Accueil</a></li>
+        <li><a href="#about" class="hover:text-blue-500">À propos</a></li>
+        <li><a href="#projects" class="hover:text-blue-500">Projets</a></li>
+        <li><a href="#contact" class="hover:text-blue-500">Contact</a></li>
+      </ul>
+      <button id="menu-btn" class="md:hidden text-2xl">&#9776;</button>
+    </nav>
+    <ul id="menu" class="hidden flex-col md:hidden bg-white p-4 space-y-4">
+      <li><a href="#home">Accueil</a></li>
+      <li><a href="#about">À propos</a></li>
+      <li><a href="#projects">Projets</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </header>
+
+  <!-- Section Accueil -->
+  <section id="home" class="h-screen flex flex-col justify-center items-center bg-gradient-to-r from-blue-500 to-purple-600 text-white">
+    <h2 class="text-5xl font-bold">Salut, je suis Julianna Nicole</h2>
+    <p class="mt-4 text-xl">Développeur Web | Full-Stack | Passionné de code</p>
+    <a href="#projects" class="mt-6 bg-white text-blue-600 px-6 py-3 rounded-full font-semibold shadow-md hover:bg-gray-200">Voir mes projets</a>
+  </section>
+
+  <!-- Section À propos -->
+  <section id="about" class="container mx-auto py-20 px-6">
+    <h2 class="text-3xl font-bold mb-6">À propos de moi</h2>
+    <p class="text-lg leading-relaxed">
+      Je suis un développeur passionné spécialisé en JavaScript, Python et Django.
+      J’adore créer des applications web performantes et modernes.
+    </p>
+  </section>
+
+  <!-- Section Projets -->
+  <section id="projects" class="bg-gray-200 py-20">
+    <div class="container mx-auto px-6">
+      <h2 class="text-3xl font-bold mb-10">Mes Projets</h2>
+      <div class="grid md:grid-cols-3 gap-6">
+        <!-- Projet 1 -->
+        <div class="bg-white shadow-md rounded-lg p-4">
+          <h3 class="text-xl font-bold mb-2">Projet 1</h3>
+          <p>Une brève description de ton projet.</p>
+        </div>
+        <!-- Projet 2 -->
+        <div class="bg-white shadow-md rounded-lg p-4">
+          <h3 class="text-xl font-bold mb-2">Projet 2</h3>
+          <p>Une brève description de ton projet.</p>
+        </div>
+        <!-- Projet 3 -->
+        <div class="bg-white shadow-md rounded-lg p-4">
+          <h3 class="text-xl font-bold mb-2">Projet 3</h3>
+          <p>Une brève description de ton projet.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section Contact -->
+  <section id="contact" class="container mx-auto py-20 px-6">
+    <h2 class="text-3xl font-bold mb-6">Contact</h2>
+    <form class="space-y-4 max-w-lg">
+      <input type="text" placeholder="Nom" class="w-full p-3 border rounded-md">
+      <input type="email" placeholder="Email" class="w-full p-3 border rounded-md">
+      <textarea placeholder="Message" class="w-full p-3 border rounded-md"></textarea>
+      <button type="submit" class="bg-blue-600 text-white px-6 py-3 rounded-md">Envoyer</button>
+    </form>
+  </section>
+
