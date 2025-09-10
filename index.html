@@ -1,81 +1,107 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mon Portfolio</title>
-  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Portfolio-Julianna</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="output.css">
 </head>
-<body class="bg-gray-100 text-gray-900">
-
-  <!-- Navbar -->
-  <header class="bg-white shadow-md fixed w-full top-0 left-0 z-10">
-    <nav class="container mx-auto flex justify-between items-center p-4">
-      <h1 class="text-2xl font-bold">MonPortfolio</h1>
-      <ul class="hidden md:flex space-x-6">
-        <li><a href="#home" class="hover:text-blue-500">Accueil</a></li>
-        <li><a href="#about" class="hover:text-blue-500">À propos</a></li>
-        <li><a href="#projects" class="hover:text-blue-500">Projets</a></li>
-        <li><a href="#contact" class="hover:text-blue-500">Contact</a></li>
+<body class="bg-purple-500">
+  <header class="bg-gradient-to-r from-pink-500 to-purple-600 rounded-lg p-10">
+    <nav class="flex justify-between items-center">
+      <h1 class="font-bold text-3xl">Julianna Nicole</h1>
+      <ul class="flex space-x-4 text-gray-900 ">
+        <li class="hover:underline"><a href="accueil">Accueil</a></li>
+        <li class="hover:underline"><a href="apropos">A propos</a></li>
+        <li class="hover:underline"><a href="competence">Compétences</a></li>
+        <li class="hover:underline"><a href="projects">Projets</a></li>
+        <li class="hover:underline"><a href="contact">Contact</a></li>
       </ul>
-      <button id="menu-btn" class="md:hidden text-2xl">&#9776;</button>
     </nav>
-    <ul id="menu" class="hidden flex-col md:hidden bg-white p-4 space-y-4">
-      <li><a href="#home">Accueil</a></li>
-      <li><a href="#about">À propos</a></li>
-      <li><a href="#projects">Projets</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
   </header>
+  <main class=" bg-purple-500 rounded-lg p-6 pt-10">
+    <section id="accueil" class="bg-blue-500 text-white px-10 py-10 rounded-lg m-10">
+      <h2 class="text-3xl font-semibold mb-4">Bonjour, je suis Julianna</h2>
+      <p class="text-lg">Etudiante en gestion & future développeuse web .</p>
+      
+    </section>
 
-  <!-- Section Accueil -->
-  <section id="home" class="h-screen flex flex-col justify-center items-center bg-gradient-to-r from-blue-500 to-purple-600 text-white">
-    <h2 class="text-5xl font-bold">Salut, je suis Julianna Nicole</h2>
-    <p class="mt-4 text-xl">Développeur Web | Full-Stack | Passionné de code</p>
-    <a href="#projects" class="mt-6 bg-white text-blue-600 px-6 py-3 rounded-full font-semibold shadow-md hover:bg-gray-200">Voir mes projets</a>
-  </section>
+    <section  id="apropos" class="bg-blue-500 text-white px-10 py-10 rounded-lg m-10">
+      <h2 class="text-2xl font-semibold mb-4">A propos de moi</h2>
+      <p>Je m'appelle Julianna, j'ai 18 ans et je suis passionnée par le développement web .
+        J'aime apprendre et créer des sites modernes et attrayants.
+      </p>
+    </section>
 
-  <!-- Section À propos -->
-  <section id="about" class="container mx-auto py-20 px-6">
-    <h2 class="text-3xl font-bold mb-6">À propos de moi</h2>
-    <p class="text-lg leading-relaxed">
-      Je suis un développeur passionné spécialisé en JavaScript, Python et Django.
-      J’adore créer des applications web performantes et modernes.
-    </p>
-  </section>
-
-  <!-- Section Projets -->
-  <section id="projects" class="bg-gray-200 py-20">
-    <div class="container mx-auto px-6">
-      <h2 class="text-3xl font-bold mb-10">Mes Projets</h2>
-      <div class="grid md:grid-cols-3 gap-6">
-        <!-- Projet 1 -->
-        <div class="bg-white shadow-md rounded-lg p-4">
-          <h3 class="text-xl font-bold mb-2">Projet 1</h3>
-          <p>Une brève description de ton projet.</p>
-        </div>
-        <!-- Projet 2 -->
-        <div class="bg-white shadow-md rounded-lg p-4">
-          <h3 class="text-xl font-bold mb-2">Projet 2</h3>
-          <p>Une brève description de ton projet.</p>
-        </div>
-        <!-- Projet 3 -->
-        <div class="bg-white shadow-md rounded-lg p-4">
-          <h3 class="text-xl font-bold mb-2">Projet 3</h3>
-          <p>Une brève description de ton projet.</p>
-        </div>
+    <section id="competence" class="bg-blue-500 text-white px-10 py-10 rounded-lg m-10">
+      <div>
+        <h2 class="text-2xl font-semibold mb-4">Mes compétences</h2>
+        <ul class="list-disc pl-4">
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+          <li>TailwindCSS</li>
+        </ul>
       </div>
+    </section>
+
+    <section id="projects" class="bg-blue-500 text-black px-10 py-10 rounded-lg m-10">
+      <h2 class="text-2xl font-semibold mb-4">Mes projets</h2>
+      <div>
+        <div class="bg-white p-5 rounded-lg mb-4">
+          <li class="text-pink-400 font-semibold text-xl">Mon porfolio</li>
+          <p class="mb-4">Vous trouverais tout mon formulaire dans ce site. </p>
+          <hr>
+        </div>
+
+        <div class="bg-white p-5 rounded-lg mb-4">
+          <li class="text-pink-400 font-semibold text-xl">Marketing Digital</li>
+          <p class="mb-4">C'est une site de vente en ligne, si tu veut acheté un produit,
+             ajoute au panier et envoyer.</p>
+          <hr>
+        </div>
+        
+        <div class="bg-white p-5 rounded-lg mb-4">
+          <li class="text-pink-400 font-semibold text-xl">Projet 3</li>
+          <p class="mb-4">Description</p>
+          <hr>
+        </div>
+
+      </div>
+      
+    </section>
+
+    <section id="contact" class="bg-blue-500 text-black px-10 py-10 rounded-lg m-10">
+      <div class="flex flex-col justify-center items-center text-center">
+        <h2 class="text-2xl">Me contacter</h2>
+        <form>
+          <input type="text" name="name" placeholder="Nom" class="w-full p-3 rounded-lg border border-gray-300
+           focus:ring-2 focus:ring-pink-400 outline-none m-5">
+          <input type="email" name="email" placeholder="Email" class="w-full p-3 rounded-lg border border-gray-300
+           focus:ring-2 focus:ring-pink-400 outline-none m-5">
+          <textarea name="message" placeholder="Message" class="w-full p-3 rounded-lg border border-gray-300
+           focus:ring-2 focus:ring-pink-400 outline-none m-5"></textarea>
+  
+          <button type="submit" class="w-full py-3 rounded-full bg-gradient-to-r from-pink-500 to-purple-600
+           text-white font-semibold shadow-lg hover:scale-105 hover:shadow-xl transition m-5">Envoyer</button>
+        </form>
+      </div>
+    </section>  
+
+  </main>
+  
+  <footer class="bg-gradient-to-r from-pink-500 to-purple-600 rounded-lg p-10 
+  flex flex-col justify-center items-center text-center">
+    <p class="mb-8 font-semibold text-xl">&copy; 2025 Julianna Nicole. Tous droits réservés.</p>
+    <div  class="flex space-x-10 text-1.5xl">
+      <p>Tél: +261 38 21 829 13</p>
+      <p class="text-blue-300 hover:underline">Email: juliannanic1321@gmail.com</p>
+      <p></p>
     </div>
-  </section>
-
-  <!-- Section Contact -->
-  <section id="contact" class="container mx-auto py-20 px-6">
-    <h2 class="text-3xl font-bold mb-6">Contact</h2>
-    <form class="space-y-4 max-w-lg">
-      <input type="text" placeholder="Nom" class="w-full p-3 border rounded-md">
-      <input type="email" placeholder="Email" class="w-full p-3 border rounded-md">
-      <textarea placeholder="Message" class="w-full p-3 border rounded-md"></textarea>
-      <button type="submit" class="bg-blue-600 text-white px-6 py-3 rounded-md">Envoyer</button>
-    </form>
-  </section>
-
+    
+  </footer>
+  
+  <script src="script.js"></script>
+</body>
+</html>
