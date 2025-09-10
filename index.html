@@ -1,107 +1,100 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr"> <!-- Modifié en 'fr' pour le français, cohérent avec le contenu -->
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio-Julianna</title>
+  <title>Portfolio - Julianna</title>
+  <!-- Fusionner ou ordonner les CSS pour éviter les conflits -->
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="output.css">
 </head>
-<body class="bg-purple-500">
-  <header class="bg-gradient-to-r from-pink-500 to-purple-600 rounded-lg p-10">
-    <nav class="flex justify-between items-center">
-      <h1 class="font-bold text-3xl">Julianna Nicole</h1>
-      <ul class="flex space-x-4 text-gray-900 ">
-        <li class="hover:underline"><a href="accueil">Accueil</a></li>
-        <li class="hover:underline"><a href="apropos">A propos</a></li>
-        <li class="hover:underline"><a href="competence">Compétences</a></li>
-        <li class="hover:underline"><a href="projects">Projets</a></li>
-        <li class="hover:underline"><a href="contact">Contact</a></li>
+<body class="bg-purple-500 font-sans"> <!-- Ajout de font-sans pour cohérence visuelle -->
+
+  <!-- Header avec nav -->
+  <header class="bg-gradient-to-r from-pink-500 to-purple-600 p-6 md:p-10 rounded-b-lg"> 
+    <!-- Ajout de md:p-10 pour responsive, et arrondi seulement en bas -->
+    <nav class="flex flex-col md:flex-row justify-between items-center gap-4 md:gap-0">
+      <h1 class="font-bold text-3xl text-white">Julianna Nicole</h1> <!-- Texte en blanc pour contraste -->
+      <ul class="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-6 text-white font-medium">
+        <li class="hover:underline"><a href="#accueil">Accueil</a></li>
+        <li class="hover:underline"><a href="#apropos">À propos</a></li>
+        <li class="hover:underline"><a href="#competence">Compétences</a></li>
+        <li class="hover:underline"><a href="#projects">Projets</a></li>
+        <li class="hover:underline"><a href="#contact">Contact</a></li>
       </ul>
     </nav>
   </header>
-  <main class=" bg-purple-500 rounded-lg p-6 pt-10">
-    <section id="accueil" class="bg-blue-500 text-white px-10 py-10 rounded-lg m-10">
-      <h2 class="text-3xl font-semibold mb-4">Bonjour, je suis Julianna</h2>
-      <p class="text-lg">Etudiante en gestion & future développeuse web .</p>
-      
+
+  <main class="p-6 md:p-10 space-y-10">
+    <!-- Section Accueil -->
+    <section id="accueil" class="bg-blue-500 text-white p-10 rounded-lg shadow-lg">
+      <h2 class="text-4xl md:text-5xl font-semibold mb-4">Bonjour, je suis Julianna</h2>
+      <p class="text-lg md:text-xl">Étudiante en gestion & future développeuse web.</p>
     </section>
 
-    <section  id="apropos" class="bg-blue-500 text-white px-10 py-10 rounded-lg m-10">
-      <h2 class="text-2xl font-semibold mb-4">A propos de moi</h2>
-      <p>Je m'appelle Julianna, j'ai 18 ans et je suis passionnée par le développement web .
-        J'aime apprendre et créer des sites modernes et attrayants.
-      </p>
+    <!-- Section À propos -->
+    <section id="apropos" class="bg-blue-500 text-white p-10 rounded-lg shadow-lg">
+      <h2 class="text-3xl font-semibold mb-4">À propos de moi</h2>
+      <p>Je m'appelle Julianna, j'ai 18 ans et je suis passionnée par le développement web. 
+      J'aime apprendre et créer des sites modernes et attrayants.</p>
     </section>
 
-    <section id="competence" class="bg-blue-500 text-white px-10 py-10 rounded-lg m-10">
-      <div>
-        <h2 class="text-2xl font-semibold mb-4">Mes compétences</h2>
-        <ul class="list-disc pl-4">
-          <li>HTML</li>
-          <li>CSS</li>
-          <li>JavaScript</li>
-          <li>TailwindCSS</li>
-        </ul>
+    <!-- Section Compétences -->
+    <section id="competence" class="bg-blue-500 text-white p-10 rounded-lg shadow-lg">
+      <h2 class="text-3xl font-semibold mb-4">Mes compétences</h2>
+      <ul class="list-disc pl-5 space-y-2">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>TailwindCSS</li>
+      </ul>
+    </section>
+
+    <!-- Section Projets -->
+    <section id="projects" class="bg-blue-500 text-black p-10 rounded-lg shadow-lg">
+      <h2 class="text-3xl font-semibold mb-6">Mes projets</h2>
+      <div class="space-y-6">
+        <!-- Projet 1 -->
+        <div class="bg-white p-6 rounded-lg shadow hover:shadow-xl transition">
+          <h3 class="text-pink-500 font-semibold text-2xl mb-2">Mon portfolio</h3>
+          <p>Vous trouverez tous mes formulaires dans ce site.</p>
+        </div>
+        <!-- Projet 2 -->
+        <div class="bg-white p-6 rounded-lg shadow hover:shadow-xl transition">
+          <h3 class="text-pink-500 font-semibold text-2xl mb-2">Marketing Digital</h3>
+          <p>Site de vente en ligne : ajoutez vos produits au panier et passez commande.</p>
+        </div>
+        <!-- Projet 3 -->
+        <div class="bg-white p-6 rounded-lg shadow hover:shadow-xl transition">
+          <h3 class="text-pink-500 font-semibold text-2xl mb-2">Projet 3</h3>
+          <p>Description du projet.</p>
+        </div>
       </div>
     </section>
 
-    <section id="projects" class="bg-blue-500 text-black px-10 py-10 rounded-lg m-10">
-      <h2 class="text-2xl font-semibold mb-4">Mes projets</h2>
-      <div>
-        <div class="bg-white p-5 rounded-lg mb-4">
-          <li class="text-pink-400 font-semibold text-xl">Mon porfolio</li>
-          <p class="mb-4">Vous trouverais tout mon formulaire dans ce site. </p>
-          <hr>
-        </div>
-
-        <div class="bg-white p-5 rounded-lg mb-4">
-          <li class="text-pink-400 font-semibold text-xl">Marketing Digital</li>
-          <p class="mb-4">C'est une site de vente en ligne, si tu veut acheté un produit,
-             ajoute au panier et envoyer.</p>
-          <hr>
-        </div>
-        
-        <div class="bg-white p-5 rounded-lg mb-4">
-          <li class="text-pink-400 font-semibold text-xl">Projet 3</li>
-          <p class="mb-4">Description</p>
-          <hr>
-        </div>
-
-      </div>
-      
-    </section>
-
-    <section id="contact" class="bg-blue-500 text-black px-10 py-10 rounded-lg m-10">
-      <div class="flex flex-col justify-center items-center text-center">
-        <h2 class="text-2xl">Me contacter</h2>
-        <form>
-          <input type="text" name="name" placeholder="Nom" class="w-full p-3 rounded-lg border border-gray-300
-           focus:ring-2 focus:ring-pink-400 outline-none m-5">
-          <input type="email" name="email" placeholder="Email" class="w-full p-3 rounded-lg border border-gray-300
-           focus:ring-2 focus:ring-pink-400 outline-none m-5">
-          <textarea name="message" placeholder="Message" class="w-full p-3 rounded-lg border border-gray-300
-           focus:ring-2 focus:ring-pink-400 outline-none m-5"></textarea>
-  
-          <button type="submit" class="w-full py-3 rounded-full bg-gradient-to-r from-pink-500 to-purple-600
-           text-white font-semibold shadow-lg hover:scale-105 hover:shadow-xl transition m-5">Envoyer</button>
+    <!-- Section Contact -->
+    <section id="contact" class="bg-blue-500 text-black p-10 rounded-lg shadow-lg">
+      <div class="flex flex-col max-w-xl mx-auto">
+        <h2 class="text-3xl font-semibold mb-6 text-center">Me contacter</h2>
+        <form class="space-y-4">
+          <input type="text" name="name" placeholder="Nom" class="w-full p-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-pink-400 outline-none">
+          <input type="email" name="email" placeholder="Email" class="w-full p-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-pink-400 outline-none">
+          <textarea name="message" placeholder="Message" class="w-full p-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-pink-400 outline-none"></textarea>
+          <button type="submit" class="w-full py-3 rounded-full bg-gradient-to-r from-pink-500 to-purple-600 text-white font-semibold shadow-lg hover:scale-105 hover:shadow-xl transition">Envoyer</button>
         </form>
       </div>
-    </section>  
-
+    </section>
   </main>
-  
-  <footer class="bg-gradient-to-r from-pink-500 to-purple-600 rounded-lg p-10 
-  flex flex-col justify-center items-center text-center">
-    <p class="mb-8 font-semibold text-xl">&copy; 2025 Julianna Nicole. Tous droits réservés.</p>
-    <div  class="flex space-x-10 text-1.5xl">
+
+  <!-- Footer -->
+  <footer class="bg-gradient-to-r from-pink-500 to-purple-600 p-6 md:p-10 rounded-t-lg text-white text-center space-y-4">
+    <p class="font-semibold">&copy; 2025 Julianna Nicole. Tous droits réservés.</p>
+    <div class="flex flex-col md:flex-row justify-center gap-6">
       <p>Tél: +261 38 21 829 13</p>
-      <p class="text-blue-300 hover:underline">Email: juliannanic1321@gmail.com</p>
-      <p></p>
+      <p class="hover:underline">Email: juliannanic1321@gmail.com</p>
     </div>
-    
   </footer>
-  
+
   <script src="script.js"></script>
 </body>
 </html>
